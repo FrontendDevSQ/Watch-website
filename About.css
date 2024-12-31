@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display:flex;
+    
+}
+
+img{
+    float: left;
+    height: 65px;
+    filter: brightness(0) invert(1);
+    margin-left: 15px;
+    display: flex;
+}
+
+ .navbar-one{
+    list-style-type: none;
+    display: flex;
+}
+ .navbar-one li{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+} 
+.navbar-one li a{
+    display: flex;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+ }
+
+ .navbar-one li a:hover{
+    color:gold;
+    
+ }
+
+.search{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 500px;
+    background-color: white;
+    height: 50px;
+    border-radius: 4px;
+}
+.search-input
+{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.search-icon{
+    width: 45px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.panel{
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.panel:hover{
+    color: gold;
+}
+.cart i{
+    font-size: 25px;
+}
+
+.cart{
+    font-size: 20px;
+    font-weight: 700px;
+    margin-left: 50px;
+    margin-top: 22px;
+    display: flex;
+   
+}
+.cart:hover{
+    color: gold;
+}
+
+.about{
+    height:500px ;
+    width: 100%;
+    background: url(Images/About1.png) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.about-intro{
+    margin-top: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.first{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    border-bottom:3px solid grey
+}
+
+.second{
+    font-weight: 100;
+    font-size: 20px;
+    
+}
+
+.container{
+    max-width: 1170px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type:none;
+}
+.footer{
+    background-color:#24262b ;
+    line-height: 1.5;
+}
+
+.footer-col{
+    width: 25%;
+    height: 100%;
+    padding: 0 15 px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: gold;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+    
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: gold;
+}
+
+
+.para{
+    color: #ffffff;
+}
+
+.type-1{
+    height: 40px;
+    border-radius: 80px;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    padding: 8px;
+    margin: 5px;
+}
+
+.type-2{    
+    height: 30px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 8px;
+    margin: 5px;
+}
+
+.type-2:hover{
+    background-color: gold;
+    color: black;
+}
+
+.type-3{
+    width: 100%;
+    height: 30px;
+    background-color:gold;
+    color: black;
+    text-align: center;
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 15px;
+
+
+}
+
+.type-3 i{
+    font-size: 10px;
+}
+
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+
+    }
+}
+
+
+@media(max-width:574px){
+    .footer-col{
+        width: 100%;
+}
+}
